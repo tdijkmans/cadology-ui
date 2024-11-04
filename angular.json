@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "cadology-ui:build:production"
+              "buildTarget": "cadology-ui:build:production"
             },
             "development": {
-              "browserTarget": "cadology-ui:build:development"
+              "buildTarget": "cadology-ui:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "cadology-ui:build"
+            "buildTarget": "cadology-ui:build"
           }
         },
         "test": {
