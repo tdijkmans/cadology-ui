@@ -1,0 +1,19 @@
+<div class="sports-data-container">
+    <h1>My Sports Data</h1>
+
+    <div class="chart-container">
+        <h2>Laps</h2>
+        <ngx-charts-line-chart [view]="view" [results]="lapData" [xAxis]="true" [yAxis]="true" [legend]="true"
+            [showXAxisLabel]="true" [showYAxisLabel]="true" [xAxisLabel]="'Laps'" [yAxisLabel]="'Time (minutes)'"
+            [animations]="true">
+        </ngx-charts-line-chart>
+    </div>
+
+    <div class="chart-container">
+        <h2>Speed Records</h2>
+        <ngx-charts-bar-vertical [view]="view" [results]="speedData" [xAxis]="true" [yAxis]="true" [legend]="true"
+            [showXAxisLabel]="true" [showYAxisLabel]="true" [xAxisLabel]="'Record'" [yAxisLabel]="'Speed (km/h)'"
+            [animations]="true">
+        </ngx-charts-bar-vertical>
+    </div>
+</div>

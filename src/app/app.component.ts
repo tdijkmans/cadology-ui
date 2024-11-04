@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { Observable } from 'rxjs';
+import { LapdataComponent } from "./components/lapdata/lapdata.component";
 import { DataService } from './services/data.service';
 
 @Component({
@@ -8,7 +9,7 @@ import { DataService } from './services/data.service';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
-  imports: [CommonModule]
+  imports: [CommonModule, LapdataComponent]
 })
 export class AppComponent {
   title = 'cadology-ui';
